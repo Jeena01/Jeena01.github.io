@@ -1,14 +1,15 @@
 import React, { useState } from 'react';
 import { Tabs, Tab, Box } from '@mui/material';
-
+import Home from './Home';
+import Resume from './Resume';
 function TabView() {
   // State to track the active tab
   const [activeTab, setActiveTab] = useState(0);
 
   // Array of tab titles and content with custom background color for each
   const tabs = [
-    { title: 'Home', content: 'Content for Tab 1', backgroundColor: '#007bff' },
-    { title: 'Resume', content: 'Content for Tab 2', backgroundColor: '#007bff' },
+    { title:'Home', content: <Home/>, backgroundColor: '#007bff' },
+    { title: 'Resume', content: <Resume/>, backgroundColor: '#007bff' },
     { title: 'Projects', content: 'Content for Tab 3', backgroundColor: '#007bff' },
   ];
 
@@ -17,14 +18,13 @@ function TabView() {
   };
 
   return (
-    <Box sx={{ width: '100%', maxWidth: 800, margin: 'auto', padding: 2 }}>
+    <Box sx={{ width: '80%', margin: 'auto', padding: 2 }}>
       <Tabs
         value={activeTab}
         onChange={handleChange}
         centered // Center the tabs
         indicatorColor="none" // Remove the default underline
         textColor="inherit"
-        aria-label="scrollable tabs"
       >
         {tabs.map((tab, index) => (
           <Tab
@@ -50,7 +50,6 @@ function TabView() {
           backgroundColor: tabs[activeTab].backgroundColor,
           borderRadius: '8px 8px 8px 8px',
           color: '#fff',
-          minHeight: '200px',
         }}
       >
         {tabs[activeTab].content}
