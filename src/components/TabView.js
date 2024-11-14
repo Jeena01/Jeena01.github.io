@@ -21,11 +21,10 @@ function TabView() {
       <Tabs
         value={activeTab}
         onChange={handleChange}
+        centered // Center the tabs
         indicatorColor="none" // Remove the default underline
         textColor="inherit"
-        variant="scrollable"
         aria-label="scrollable tabs"
-        sx={{ borderBottom: 2, borderColor: 'divider' }}
       >
         {tabs.map((tab, index) => (
           <Tab
@@ -49,7 +48,7 @@ function TabView() {
         sx={{
           padding: 2,
           backgroundColor: tabs[activeTab].backgroundColor,
-          borderRadius: '0 0 8px 8px',
+          borderRadius: '8px 8px 8px 8px',
           color: '#fff',
           minHeight: '200px',
         }}
