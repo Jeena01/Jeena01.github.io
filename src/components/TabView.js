@@ -35,10 +35,6 @@ function TabView() {
               color: activeTab === index ? '#fff' : '#333',
               fontWeight: activeTab === index ? 'bold' : 'normal',
               borderRadius: '8px 8px 0 0',
-              transition: 'background-color 0.3s ease',
-              '&:hover': {
-                backgroundColor: activeTab === index ? tab.backgroundColor : '#e0e0e0',
-              },
             }}
           />
         ))}
