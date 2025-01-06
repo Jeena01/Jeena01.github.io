@@ -136,22 +136,18 @@ const data = {
     ]
   }  ;
 
+const Education =()=>{
+  return(
+    <p></p>
+  )
+}
+
+
+
 const Resume = () => {
   return (
-    <Box p={4}>
+    <Box>
 
-      
-        {data.education.map((edu, index) => (
-          <ListItem key={index}>
-            <ListItemText
-              primary={edu.institution}
-              secondary={`${edu.degree}, ${edu.dates}`}
-            />
-            <Typography variant="body2" color="textSecondary">
-              GPA: {edu.GPA}
-            </Typography>
-          </ListItem>
-        ))}
 
   </Box>
 )

@@ -1,3 +1,8 @@
 .App {
   text-align: center;
+  background-repeat: repeat;
+  background-size: 70vh;
+  background-attachment: fixed;
+  min-height: 100vh;
+
 }

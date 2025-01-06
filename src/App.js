@@ -1,11 +1,13 @@
 
 import './App.css';
-import TabView from './components/TabView';
+import NavBar from './components/NavBar';
+import background from "./bg-img.jpg"
 
 function App() {
   return (
-    <div className="App">
-        <TabView/>
+    <div style={{backgroundImage:`url(${background})`}} 
+    className="App">
+        <NavBar/>
       
     </div>
   );
