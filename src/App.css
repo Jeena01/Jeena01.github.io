@@ -1,8 +1,12 @@
+@import "./vars.css";
+
+
 .App {
-  text-align: center;
   background-repeat: repeat;
-  background-size: 70vh;
+  background-size: 50vw;
   background-attachment: fixed;
-  min-height: 100vh;
+  height: 100vh;
+  width: 100vw;
+
 
 }

@@ -1,14 +1,17 @@
 
 import './App.css';
+//import background from "./bg-img.jpg"
+import mathbg from "./144644014_10148867.jpg"
 import NavBar from './components/NavBar';
-import background from "./bg-img.jpg"
-
+import Hero from './components/Hero/Hero';
+import About from './components/About/About'
 function App() {
   return (
-    <div style={{backgroundImage:`url(${background})`}} 
+    <div style={{backgroundImage:`url(${mathbg})`}} 
     className="App">
-        <NavBar/>
-      
+      <NavBar/>
+      <Hero/>
+      <About/>
     </div>
   );
 }
