@@ -1,18 +1,29 @@
-
+import { createTheme, CssBaseline, ThemeProvider } from '@mui/material';
 import './App.css';
+import Experience from './components/Experience';
 //import background from "./bg-img.jpg"
-import mathbg from "./144644014_10148867.jpg"
-import NavBar from './components/NavBar';
-import Hero from './components/Hero/Hero';
-import About from './components/About/About'
+import Hero from './components/Hero';
+import Projects from './components/Projects';
+import Skills from './components/Skills';
+
 function App() {
+  const darkTheme = createTheme({
+    palette: {
+      mode: 'dark',
+    },
+  });
+
   return (
-    <div style={{backgroundImage:`url(${mathbg})`}} 
-    className="App">
-      <NavBar/>
+    <ThemeProvider theme={darkTheme}>
+      <CssBaseline/>
+    <div
+    className="App" >
       <Hero/>
-      <About/>
+      <Skills/>
+      <Experience/>
+      <Projects/>
     </div>
+    </ThemeProvider>
   );
 }
 

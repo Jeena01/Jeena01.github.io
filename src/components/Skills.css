@@ -1,0 +1,13 @@
+.Skills{
+    display: "flex";
+    align-items: "center";
+}
+.gridcontainer {
+    margin: 30px;
+    padding: 20px;
+    align-items: center;
+}
+.skillset{
+    margin: 30px;
+    padding: 20px;
+}
