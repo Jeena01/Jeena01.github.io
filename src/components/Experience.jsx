@@ -1,7 +1,7 @@
 import { Timeline, TimelineItem, TimelineConnector, TimelineContent, TimelineDot, TimelineOppositeContent, TimelineSeparator } from "@mui/lab";
 import { Typography } from "@mui/material";
 import { Work, RocketLaunch, School } from "@mui/icons-material";
-import { createTheme, CssBaseline, ThemeProvider } from '@mui/material';
+import { createTheme} from '@mui/material';
 import React from "react";
 
 function Experience() {
@@ -19,7 +19,7 @@ function Experience() {
 
 
   return (
-    <section>
+    <section id="experience">
       <Timeline position="alternate" sx={{
         margin: "70px",
         padding: "50px",

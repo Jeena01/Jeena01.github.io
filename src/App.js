@@ -5,9 +5,13 @@ import Experience from './components/Experience';
 import Hero from './components/Hero';
 import Projects from './components/Projects';
 import Skills from './components/Skills';
+import Navbar from './components/Navbar';
 
 function App() {
   const darkTheme = createTheme({
+    typography: {
+      fontFamily: "'Roboto', 'Arial', sans-serif", // Replace with your desired font(s)
+    },
     palette: {
       mode: 'dark',
     },
@@ -17,11 +21,12 @@ function App() {
     <ThemeProvider theme={darkTheme}>
       <CssBaseline/>
     <div
-    className="App" >
+    className="App">
+      <Navbar />
       <Hero/>
       <Skills/>
-      <Experience/>
-      <Projects/>
+      <Experience />
+      <Projects  />
     </div>
     </ThemeProvider>
   );
