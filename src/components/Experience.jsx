@@ -24,7 +24,7 @@ function Experience() {
         margin: "70px",
         padding: "50px",
         "@media (max-width: 600px)": {
-          margin: "25px",
+          margin: "12px",
         }
 
       }}>
