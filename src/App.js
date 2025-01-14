@@ -13,7 +13,7 @@ function App() {
       fontFamily: "'Roboto', 'Arial', sans-serif", // Replace with your desired font(s)
     },
     palette: {
-      mode: 'dark',
+      mode: 'dark', // Ensures the dark mode base styling
     },
   });
 
