@@ -66,6 +66,8 @@ function Skills() {
 
   const skillItemStyle = {
     display: "flex",
+    backgroundColor: "white",
+    color: "black",
     alignItems: "center",
     padding: "8px 16px",
     borderRadius: "8px",
@@ -74,7 +76,8 @@ function Skills() {
   };
 
   return (
-    <Box  id="skills"
+    <Box
+      id="skills"
       sx={{
         display: "flex",
         flexDirection: "column",
@@ -82,13 +85,16 @@ function Skills() {
         gap: 4,
         padding: 4,
         maxWidth: "900px",
-        margin: "20px auto", 
-        scrollSnapAlign: "start"
+        margin: "20px auto",
+        scrollSnapAlign: "start",
         // Center the entire section
       }}
     >
       {skills.map((skillCategory) => (
-        <Box key={skillCategory.category} sx={{ textAlign: "center", width: "100%" }}>
+        <Box
+          key={skillCategory.category}
+          sx={{ textAlign: "center", width: "100%" }}
+        >
           <Typography variant="h5" gutterBottom>
             {skillCategory.category}
           </Typography>
