@@ -3,7 +3,7 @@ import { GitHub, Launch } from "@mui/icons-material"; // Example icons
 
 function Projects() {
   return (
-    <Box sx={{ display: "flex", flexWrap: "wrap", justifyContent: "center", gap: 4, padding: 2 }}>
+    <Box id="projects" sx={{ display: "flex", flexWrap: "wrap", justifyContent: "center", gap: 4, padding: 2 }}>
       {/* Development Projects */}
       <Paper
         sx={{

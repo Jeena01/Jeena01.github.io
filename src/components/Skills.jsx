@@ -77,6 +77,7 @@ function Skills() {
 
   return (
     <Box
+      id="skills"
       sx={{
         display: "flex",
         flexDirection: "column",
@@ -84,7 +85,7 @@ function Skills() {
         gap: 4,
         padding: 4,
         maxWidth: "900px",
-        margin: "0 auto",
+        margin: "20px auto",
         scrollSnapAlign: "start",
         // Center the entire section
       }}
