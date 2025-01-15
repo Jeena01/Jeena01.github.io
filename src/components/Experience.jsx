@@ -9,7 +9,6 @@ import {
   TimelineDot,
   TimelineOppositeContent,
 } from "@mui/lab";
-import { CSSTransition } from "react-transition-group";
 import { Typography, Box } from "@mui/material";
 import { RocketLaunch, Work, School } from "@mui/icons-material";
 
@@ -117,7 +116,7 @@ const TimelineWithHover = () => {
             </Typography>
             <Typography variant="body1">{item.company}</Typography>
             <Typography variant="body2">{item.description}</Typography>
-            {
+            {hoveredIndex === index && (
               <Box className="m-2">
                 <Typography variant="body2">
                   <ul style={{ listStyleType: "none", padding: 0, margin: 0 }}>
@@ -127,7 +126,7 @@ const TimelineWithHover = () => {
                   </ul>
                 </Typography>
               </Box>
-            }
+            )}
           </TimelineContent>
         </TimelineItem>
       ))}
