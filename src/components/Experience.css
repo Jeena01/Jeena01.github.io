@@ -1,0 +1,23 @@
+/* When entering */
+.fade-enter {
+    height: 0px;
+    transform: translateY(-10px); /* Start off-screen */
+  }
+  
+.fade-enter-active {
+    height: 30px;
+    transform: translateY(0); /* End at the desired position */
+    transition: height 1s ease, transform 1s ease;
+  }
+  
+/* When exiting */
+  .fade-exit {
+    height: 30px;
+    transform: translateY(0); /* Keep the element at its final position before disappearing */
+  }
+  
+  .fade-exit-active {
+    height: 0px;
+    transform: translateY(-10px); /* Slide up and fade out */
+    transition: height 0s ease, transform 0s ease;
+  }
