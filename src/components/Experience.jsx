@@ -40,9 +40,8 @@ const TimelineWithHover = () => {
       title: "Software Lead",
       company: "Space MENs",
       details: [
-        "Led a team of 5 developers.",
-        "Implemented CI/CD pipelines.",
-        "Optimized system performance by 30%.",
+        "Served as software lead for a research project",
+        "Developed computer vision solutions for visual data analysis",
       ],
       icon: <RocketLaunch sx={iconStyle} />,
     },
@@ -53,7 +52,7 @@ const TimelineWithHover = () => {
       description: "",
       details: [
         "Developed research tools for data analysis.",
-        "Authored 2 research papers.",
+        "Authored a research paper.",
         "Collaborated with cross-functional teams.",
       ],
       icon: <Work sx={iconStyle} />,
@@ -64,7 +63,7 @@ const TimelineWithHover = () => {
       company: "UBC, CMPS Department",
       description: "",
       details: [
-        "Assisted in teaching 3 undergraduate courses.",
+        "Assisted in teaching undergraduate computer science courses.",
         "Provided 1:1 support to students.",
         "Graded assignments and exams.",
       ],

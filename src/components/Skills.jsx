@@ -85,7 +85,7 @@ function Skills() {
         gap: 4,
         padding: 4,
         maxWidth: "900px",
-        margin: "20px auto",
+        margin: "100px auto",
         scrollSnapAlign: "start",
         // Center the entire section
       }}

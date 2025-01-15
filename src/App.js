@@ -24,6 +24,13 @@ function App() {
     className="App">
       <Navbar />
       <Hero/>
+      <div style={{
+          margin: "0 10%",
+          backgroundColor: "fuchsia",
+          height: "5px"
+        }}>
+
+        </div>
       <Skills/>
       <Experience />
       <Projects  />
