@@ -99,7 +99,7 @@ export default function ExperienceSection() {
                 }`}
               >
                 <h3
-                  className={`text-2xl font-semibold text-${exp.color}-600 mb-1`}
+                  className={`text-2xl font-semibold text-$pink-800 mb-1`}
                 >
                   {exp.title}
                 </h3>
@@ -127,9 +127,9 @@ export default function ExperienceSection() {
   {experiences.map((exp, index) => (
     <div
       key={index}
-      className={`bg-white dark:bg-gray-800 border-l-4 border-${exp.color}-600 rounded-sm p-6 flex flex-col`}
+      className={`bg-white dark:bg-gray-800 border-l-4 border-pink-600 rounded-sm p-6 flex flex-col`}
     >
-      <h3 className={`text-lg font-semibold text-${exp.color}-600`}>
+      <h3 className={`text-lg font-semibold text-pink-600`}>
         {exp.title}
       </h3>
       <p className="text-gray-700 dark:text-gray-300 font-medium">{exp.company}</p>
