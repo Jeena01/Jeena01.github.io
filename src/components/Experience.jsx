@@ -3,7 +3,7 @@ import React, { useState } from "react";
 export default function ExperienceSection() {
 
 
-  const [showDetail, setShowDetail]=useState(true);
+  const [showDetail, setShowDetail]=useState(false);
   const experiences = [
     {
       title: "Full Stack Software Developer",
@@ -78,7 +78,7 @@ export default function ExperienceSection() {
   />
   <div className="w-14 h-7 bg-gray-300 rounded-full transition-colors duration-300 peer-checked:bg-pink-500"></div>
   <div className="absolute left-0.5 top-0.5 w-6 h-6 bg-white rounded-full shadow-md transition-transform duration-300 transform peer-checked:translate-x-7"></div>
-  <span className="ml-3 text-sm font-medium text-gray-900 dark:text-gray-300"> {showDetail ? "Tell Me Everything Mode" : "TL;DR Mode"} </span>
+  <span className="ml-3 text-sm font-medium text-gray-900 dark:text-gray-300"> Tell Me Everything Mode </span>
 </label>
 
 </div>

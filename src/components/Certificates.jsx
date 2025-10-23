@@ -24,7 +24,7 @@ export default function CertificatesSection() {
       year: "2024",
       emoji: "🤖",
       description:
-        "Neural networks, deep learning, and model optimization using TensorFlow and real-world data applications.",
+        "Python automation, systems administration, configuration management and Cloud, Git and GitHub.",
     
     },
     {
