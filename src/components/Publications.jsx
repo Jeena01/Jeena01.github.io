@@ -19,8 +19,8 @@ export default function PublicationsSection() {
   ];
 
   return (
-    <section className="w-full bg-yellow-50 py-20 text-center">
-      <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-12">
+    <section  id = "publications" className="w-full bg-gradient-to-b from-yellow-50 to-yellow-50 text-center">
+      <h2 className="text-4xl md:text-5xl font-bold text-amber-950 mb-12 pb-10">
         📖 Publications
       </h2>
 
@@ -38,6 +38,9 @@ export default function PublicationsSection() {
           </div>
         ))}
       </div>
+      <p className="text-gray-500 text-sm mt-10">
+          Only two. For now... Dun dun DUN
+        </p>
     </section>
   );
 }

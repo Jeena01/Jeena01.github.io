@@ -1,6 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 
 export default function ExperienceSection() {
+
+
+  const [showDetail, setShowDetail]=useState(true);
   const experiences = [
     {
       title: "Full Stack Software Developer",
@@ -38,7 +41,7 @@ export default function ExperienceSection() {
     {
       title: "Supplemental Learning Leader",
       company: "Student Learning Hub, UBC 📚",
-      duration: "May 2022 – August 2023",
+      duration: "2022 – 2023",
       color: "purple",
       details: [
         "Led interactive workshops on data structures, calculus, and OOP concepts to enhance student engagement.",
@@ -49,7 +52,7 @@ export default function ExperienceSection() {
     {
       title: "Undergraduate Teaching Assistant",
       company: "Computer Science Department, UBC 🍀",
-      duration: "May 2022 – April 2023",
+      duration: "2022 – 2023",
       color: "green",
       details: [
         "Guided students through debugging, troubleshooting, and Java code reviews to strengthen problem-solving skills.",
@@ -60,13 +63,28 @@ export default function ExperienceSection() {
   ];
 
   return (
-    <section className="w-full bg-gradient-to-b from-pink-50 via-white to-pink-50 py-20">
-      <div className="container mx-auto px-6">
-        <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-16 text-center">
-          ✨ Adventures in Tech ✨
+    <section id = "experience" className="w-full bg-gradient-to-b from-pink-50 via-white to-yellow-50 ">
+      <div className="container mx-auto px-6 py-10">
+        <h2 className="text-4xl md:text-5xl font-bold text-pink-800 mb-16 text-center">
+          ✨ Experience ✨
         </h2>
+        <div className="flex justify-center mb-8">
+        <label className="relative inline-flex items-center cursor-pointer">
+  <input
+    type="checkbox"
+    checked={showDetail}
+    onChange={() => setShowDetail(!showDetail)}
+    className="sr-only peer"
+  />
+  <div className="w-14 h-7 bg-gray-300 rounded-full transition-colors duration-300 peer-checked:bg-pink-500"></div>
+  <div className="absolute left-0.5 top-0.5 w-6 h-6 bg-white rounded-full shadow-md transition-transform duration-300 transform peer-checked:translate-x-7"></div>
+  <span className="ml-3 text-sm font-medium text-gray-900 dark:text-gray-300"> {showDetail ? "Tell Me Everything Mode" : "TL;DR Mode"} </span>
+</label>
 
-        <div className="relative  max-w-5xl mx-auto">
+</div>
+
+
+        {showDetail? (<div className="relative  max-w-5xl mx-auto">
           {experiences.map((exp, index) => (
             <div
               key={index}
@@ -104,8 +122,29 @@ export default function ExperienceSection() {
               </div>
             </div>
           ))}
-        </div>
+        </div>):(
+          <div className="max-w-4xl mx-auto space-y-3 mb-12">
+  {experiences.map((exp, index) => (
+    <div
+      key={index}
+      className={`bg-white dark:bg-gray-800 border-l-4 border-${exp.color}-600 rounded-sm p-6 flex flex-col`}
+    >
+      <h3 className={`text-lg font-semibold text-${exp.color}-600`}>
+        {exp.title}
+      </h3>
+      <p className="text-gray-700 dark:text-gray-300 font-medium">{exp.company}</p>
+      <p className="text-gray-500 dark:text-gray-400 italic text-sm">{exp.duration}</p>
+    </div>
+  ))}
+</div>
+
+
+        )}
+        <p className="text-gray-500 text-center text-sm mt-25 mb-25 pb-20">
+          When needed, I can also be a serious goose 👔
+        </p>
       </div>
+      
     </section>
   );
 }

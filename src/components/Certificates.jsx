@@ -8,7 +8,7 @@ export default function CertificatesSection() {
       year: "2025",
       emoji: "💻",
       description:
-        "Comprehensive certification covering frontend, backend, and deployment practices using React, Node.js, and databases.",
+        "Frontend, backend, and deployment practices using React, Node.js, and databases.",
     },
     {
       title: "Machine Learning Specialization",
@@ -16,7 +16,7 @@ export default function CertificatesSection() {
       year: "2024",
       emoji: "🤖",
       description:
-        "Specialized in neural networks, deep learning, and model optimization using TensorFlow and real-world data applications.",
+        "Neural networks, deep learning, and model optimization using TensorFlow and real-world data applications.",
     },
     {
         title: "IT Automation with Python",
@@ -24,7 +24,7 @@ export default function CertificatesSection() {
       year: "2024",
       emoji: "🤖",
       description:
-        "Specialized in neural networks, deep learning, and model optimization using TensorFlow and real-world data applications.",
+        "Neural networks, deep learning, and model optimization using TensorFlow and real-world data applications.",
     
     },
     {
@@ -38,9 +38,9 @@ export default function CertificatesSection() {
   ];
 
   return (
-    <section className="w-full bg-gradient-to-b from-blue-50 via-white to-blue-50 py-20">
+    <section id="certificates" className="w-full bg-gradient-to-b from-green-50 via-white to-blue-50 py-20">
       <div className="container mx-auto px-6 text-center">
-        <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-12">
+        <h2 className="text-4xl md:text-5xl font-bold text-blue-900 mb-12">
           🏅 Certifications
         </h2>
 
