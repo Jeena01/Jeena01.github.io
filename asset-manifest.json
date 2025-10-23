@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.e05d7ce9.css",
-    "main.js": "/static/js/main.6560d06b.js",
+    "main.js": "/static/js/main.148c641b.js",
     "static/js/453.aac68abc.chunk.js": "/static/js/453.aac68abc.chunk.js",
     "static/media/reading goose.png": "/static/media/reading goose.7ff5a1c67595a8064385.png",
     "static/media/grad_goose.png": "/static/media/grad_goose.c510098a4cb05460d683.png",
@@ -18,11 +18,11 @@
     "index.html": "/index.html",
     "static/media/vue.svg": "/static/media/vue.c286d2da48ffbf281f407b0c4c94271f.svg",
     "main.e05d7ce9.css.map": "/static/css/main.e05d7ce9.css.map",
-    "main.6560d06b.js.map": "/static/js/main.6560d06b.js.map",
+    "main.148c641b.js.map": "/static/js/main.148c641b.js.map",
     "453.aac68abc.chunk.js.map": "/static/js/453.aac68abc.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e05d7ce9.css",
-    "static/js/main.6560d06b.js"
+    "static/js/main.148c641b.js"
   ]
 }
