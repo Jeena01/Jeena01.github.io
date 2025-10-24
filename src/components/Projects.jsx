@@ -24,6 +24,13 @@ const projects = [
     
   },
   {
+    title: "Multiplayer Chess",
+    description:
+      "Developed a multiplayer chess game with WebSockets or TCP sockets for real-time communication, game state management and concurrency.",
+    frameworks: ["Java","Spring Boot"],
+    
+  },
+  {
     title: "ScanWich Smart Fridge Magnet",
     description:
       "Created an IoT-powered smart fridge magnet that recognizes food labels using Tesseract OCR and Raspberry Pi. Built the companion mobile app with React Native and Flask for text recognition and inventory tracking.",

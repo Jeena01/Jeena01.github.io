@@ -28,7 +28,7 @@ export default function PublicationsSection() {
 
       <div className="grid md:grid-cols-2 gap-10 max-w-5xl mx-auto px-6">
         {publications.map((pub, index) => (
-          <a href={pub.href}>
+          <a href={pub.href} target="_blank" rel="noopener noreferrer">
           <div
           
             key={index}
