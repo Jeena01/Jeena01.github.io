@@ -8,6 +8,7 @@ export default function PublicationsSection() {
         "Analyzing Developers’ Interactions and Patterns During Programming Tasks",
       venue: "IEEE VL/HCC 2025 — First Author 🌟",
       emoji: "💬",
+      href: "https://conf.researchr.org/details/vlhcc-2025/vlhcc-2025-research-papers/42/Cracking-CodeWhisperer-Analyzing-Developers-Interactions-and-Patterns-During-Program",
     },
     {
       title: "CodeWatcher",
@@ -15,6 +16,7 @@ export default function PublicationsSection() {
         "IDE Telemetry Data Extraction Tool for Understanding Coding Interactions with LLMs",
       venue: "IEEE ICSME 2025 — Third Author 🧑‍💻",
       emoji: "👀",
+      href: "https://conf.researchr.org/details/icsme-2025/icsme-2025-tool-demonstration/9/CodeWatcher-IDE-Telemetry-Data-Extraction-Tool-for-Understanding-Coding-Interactions"
     },
   ];
 
@@ -26,7 +28,9 @@ export default function PublicationsSection() {
 
       <div className="grid md:grid-cols-2 gap-10 max-w-5xl mx-auto px-6">
         {publications.map((pub, index) => (
+          <a href={pub.href}>
           <div
+          
             key={index}
             className="bg-white border border-yellow-100 rounded-3xl shadow-md hover:shadow-lg hover:shadow-yellow-100 transition-all duration-300 transform hover:-translate-y-1 p-8 flex flex-col items-center text-center"
           >
@@ -36,6 +40,7 @@ export default function PublicationsSection() {
             <p className="text-gray-700 italic mb-3">{pub.description}</p>
             <p className="text-gray-500 font-medium">{pub.venue}</p>
           </div>
+          </a>
         ))}
       </div>
       <p className="text-gray-500 text-sm mt-10">
