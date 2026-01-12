@@ -60,7 +60,7 @@ export default function CertificatesSection() {
         </div>
 
         <p className="text-gray-500 text-sm mt-10">
-          ✨ Always learning, always growing — because the journey never stops and I keep forgetting to cancel my Coursera subscription.
+          🧚 Always learning, always growing — because the journey never stops and I keep forgetting to cancel my Coursera subscription.
         </p>
       </div>
     </section>
