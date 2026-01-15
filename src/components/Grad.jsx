@@ -19,9 +19,8 @@ export default function Grad() {
             1° (Degree) Hotter 🎓
           </h2>
           <p className="text-gray-600 text-md md:text-lg mb-6">
-             Recently graduated from the University of British Columbia with a Bachelor's in Computer Science and a perfect 4.33 GPA, I’m currently wrapping up the last of my research projects from university and polishing my coding skills.  
-  <br/>I love channeling my creativity into software projects and opportunities that can make a positive impact in people's lives.  
-  Right now, I’m actively looking for work in software development and research. 
+             University of British Columbia graduate with a Bachelor's in Computer Science and a perfect 4.33 GPA. I had an incredible time learning and growing during my years at UBC, and was lucky enough to find wonderful opportunities in research, software, community organizing and creative writing.
+  <br/>I love channeling my creativity into software projects that benefit the community, can make a positive impact in people's lives, or are just plain fun!
           </p>
         </div>
       </div>

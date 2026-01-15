@@ -6,14 +6,13 @@ export default function ExperienceSection() {
   const [showDetail, setShowDetail]=useState(false);
   const experiences = [
     {
-      title: "Full Stack Software Developer",
-      company: "Enhance Lifestyle Apartments 🏢",
-      duration: "2025 – Present",
+      title: "Junior Software Engineer",
+      company: "Quadient AP 🏢",
+      duration: "2026",
       color: "pink",
       details: [
-        "Designed and managed PostgreSQL databases and developed Django REST APIs for data analytics and scalability.",
-        "Built responsive React + TailwindCSS interfaces with automated validation for booking and payment workflows.",
-        "Implemented CI/CD pipelines using GitHub Actions and Docker, deploying via Cloudflare for AI-ready infrastructure."
+        "Just started here!",
+        "Finished watching the training videos :P"
       ],
     },
     {
